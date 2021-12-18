@@ -52,6 +52,10 @@ class Todo(models.Model):
     def __str__(self):
         return f'{self.title} ({self.project.name}) - {self.user.first_name}'
 
+    def delete(self):
+        self.is_active = False if self.is_active else True
+        self.save()
+
     class Meta:
         verbose_name = 'Заметка'
         verbose_name_plural = 'Заметки'
