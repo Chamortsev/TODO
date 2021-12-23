@@ -1,31 +1,23 @@
-import React from 'react'
+//import React from 'react';
 
-const FooterItem = ({footer}) => {
-   return (
-       <tr>
-           <td>
-               {footer.main}
-           </td>
-           <td>
-               {footer.api}
-           </td>
-       </tr>
-   )
-}
+var style = {
+    backgroundColor: "#F8F8F8",
+    borderTop: "1px solid #E7E7E7",
+    textAlign: "center",
+    padding: "20px",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    height: "60px",
+    width: "100%",
+};
 
-const FooterList = ({footers}) => {
+const Footer = () => {
     return (
-        <table>
-            <th>
-                Main
-            </th>
-            <th>
-                Api
-            </th>
+        <div style={style}>
+            Footer
+        </div>
+    );
+};
 
-            {footers.map((footer) => <FooterItem footer={footer} />)}
-        </table>
-    )
- }
-
-export default FooterList
+export default Footer;
