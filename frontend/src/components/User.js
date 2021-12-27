@@ -33,38 +33,4 @@ const UserList = ({users}) => {
     )
 }
 
-export default UserList;
-
-
-
-import {Link} from 'react-router-dom'
-
-
-const UserItem = ({user}) => {
-    return(
-        <tr>
-            <td>{user.first_name}</td>
-            <td><Link to={`/user/${user.id}`}>{author.last_name}</Link> </td>
-            <td>{author.birthday_year}</td>
-        </tr>
-    )
-}
-
-const AuthorList = ({authors}) => {
-    return (
-        <table>
-            <th>
-                First name
-            </th>
-            <th>
-                Last name
-            </th>
-            <th>
-                Birthday year
-            </th>
-            {authors.map((author) => <AuthorItem author={author} />)}
-        </table>
-    )
-}
-
-export default AuthorList
+export default UserList
