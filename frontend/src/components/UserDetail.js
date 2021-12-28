@@ -10,9 +10,9 @@ const UserDetail = ({all_obj}) => {
     let { id } = useParams();
     console.log('user_id = ',{id})
 
-    let filtered_users = all_obj.users.filter((item) => item.id == id)
+    let filtered_users = all_obj.users.filter((item) => item.id = id)
     let filtered_projects = all_obj.projects.filter((project) => project.users.includes(parseInt(id)))
-    let filtered_todo = all_obj.todo.filter((todo) => todo.user == id)
+    let filtered_todo = all_obj.todo.filter((todo) => todo.user = id)
 
     return (
         <div>

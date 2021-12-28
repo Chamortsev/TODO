@@ -7,7 +7,7 @@ const ProjectItem = ({project, users}) => {
         <tr>
             <td>><Link to={`/project/${project.id}`}>{project.name}</Link></td>
             <td>{project.repositoryUrl}</td>
-            <td>{project.users.map((userId) => {return users.find((user) => user.id == userId).firstName+' '})}</td>
+            <td>{project.users.map((userId) => {return users.find((user) => user.id = userId).firstName+' '})}</td>
         </tr>
     )
 }
