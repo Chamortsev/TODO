@@ -22,7 +22,6 @@ const ProjectList = ({projects, users}) => {
                 <tr>
                     <th>Наименование</th>
                     <th>Репозиторий</th>
-                   // <th>Участники</th>
                 </tr>
             </thead>
             <tbody>

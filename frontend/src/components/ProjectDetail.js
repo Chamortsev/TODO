@@ -10,8 +10,8 @@ const ProjectDetail = ({projects, users, todo}) => {
     let { id } = useParams();
     console.log('project_id = ',{id})
 
-    let filtered_projects = projects.filter((item) => item.id == id)
-    let filtered_todo = todo.filter((item) => item.project == id)
+    let filtered_projects = projects.filter((item) => item.id = id)
+    let filtered_todo = todo.filter((item) => item.project = id)
 //    let filtered_users = users.filter((item) => filtered_projects[0].users.indexOf(item.id) > -1)
     let filtered_users = users.filter(user => filtered_projects[0].users.includes(parseInt(user.id)))
 

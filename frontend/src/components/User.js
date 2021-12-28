@@ -1,6 +1,7 @@
 //import UserItem from './UserItem.js'
 import {Link} from 'react-router-dom'
 
+
 const UserItem = ({user}) => {
     return (
         <tr>
@@ -28,7 +29,8 @@ const UserList = ({users}) => {
             <th>
                 Email
             </th>
-            {users.map((user) => <UserItem user={user} />)}
+                {users.map((user) => <UserItem user={user} />)}
+
         </table>
     )
 }
