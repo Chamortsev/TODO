@@ -47,7 +47,12 @@ INSTALLED_APPS = [
     'todo',
     'users',
     'projects',
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    'SCHEMA': 'todo.schema.schema'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
